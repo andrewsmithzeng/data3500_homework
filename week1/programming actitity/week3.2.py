@@ -7,4 +7,4 @@ and then print a friendly message telling the user how long they have to live.
 """
 a = eval(input('how old are you?'))
 b = eval(input('what age would you like to live to?'))
-print(f'you have {b-a} year to live')
+print(f'you have {b-a} years to live')

@@ -13,7 +13,20 @@ and outputs the smallest and largest numbers. Then, if the largest number is div
 between the smallest and largest numbers. If the largest number is not divisible by 2, print whether the 
 smallest number is within the range of 0 to 10.
 """
+def number_comparison():
+    a = eval(input('please give me the fisrt number:'))
+    b = eval(input('please give me the second number:'))
+    c = eval(input('gimme one more:'))
+    biggest = max(a,b,c)
+    smallest = min(a,b,c)
+    print(f'the biggest number is {biggest} and the smallest one is {smallest}')
+    if biggest % 2 == 0:
+        print(f"the range between the smallest and the largest numbers is {biggest - smallest}.")
+    else:
+        if smallest in range(10):
+            print('the smallest one is between 0~10')
+        else:
+            print('we get the smallest number outside of 0~10')
 
-a = input('please give me the fisrt number:')
-b = input('please give me the second number:')
-c = input('gimme one more:')
+number_comparison()
+
