@@ -9,5 +9,10 @@ Programming Activity 1
  6. add a check before the final print statement to see if total_bill is equal to 0.  If so, print a message to the user to check their inputs.
 """
 apple_price= 3
-number_purchased = 199
 tax = 1.07
+while True: 
+    number_purchased = eval(input("how many apples do you wanna purchase:"))
+    total_bill = apple_price * number_purchased * tax
+    if total_bill != 0:
+        print(f"the apples we purchased are {number_purchased} and the total bill is {total_bill}")
+        break
