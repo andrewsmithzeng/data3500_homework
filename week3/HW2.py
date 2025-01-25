@@ -9,6 +9,7 @@ Replace *** in the following code with a statement that will print a message lik
 'Congratulations! Your grade of 91 earns you an A in this course'. 
 Your statement should print the value stored in the variable grade.
 
+
 2.4 (ARITHMETIC)
 For each of the arithmetic operators +, -, *, /, //, and **, display the value of an expression 
 with 27.5 as the left operand and 2 as the right operand.
@@ -44,12 +45,13 @@ number  square  cube
 """
 
 # 2.3 (FILL IN THE MISSING CODE)
-grade = 91  # Example grade
+
+grade = eval(input（'what is your grade?'）)  # Example grade
 if grade >= 90:
     print(f'Congratulations! Your grade of {grade} earns you an A in this course')
 
 # 2.4 (ARITHMETIC) 
-print("\n2.4 Arithmetic Operations:")
+
 print(f"27.5 + 2 = {27.5 + 2}")   # Addition
 print(f"27.5 - 2 = {27.5 - 2}")   # Subtraction
 print(f"27.5 * 2 = {27.5 * 2}")   # Multiplication
@@ -58,7 +60,7 @@ print(f"27.5 // 2 = {27.5 // 2}") # Integer division
 print(f"27.5 ** 2 = {27.5 ** 2}") # Exponentiation
 
 # 2.5 (CIRCLE AREA, DIAMETER AND CIRCUMFERENCE)
-print("\n2.5 Circle Calculations:")
+
 radius = 2
 pi = 3.14159
 diameter = 2 * radius
@@ -70,15 +72,15 @@ print(f"Circumference = {circumference}")
 print(f"Area = {area}")
 
 # 2.6 (ODD OR EVEN)
-print("\n2.6 Odd or Even:")
-number = 7  # Example number
+
+number = int(input('gimme an integer:")) # Example number
 if number % 2 == 0:
     print(f"{number} is even")
 else:
     print(f"{number} is odd")
 
 # 2.7 (MULTIPLES)
-print("\n2.7 Multiples:")
+
 if 1024 % 4 == 0:
     print("1024 is a multiple of 4")
 else:
@@ -90,7 +92,7 @@ else:
     print("2 is not a multiple of 10")
 
 # 2.8 (TABLE OF SQUARES AND CUBES)
-print("\n2.8 Table of Squares and Cubes:")
+
 print("number\tsquare\tcube")
 for i in range(6):
     square = i ** 2
