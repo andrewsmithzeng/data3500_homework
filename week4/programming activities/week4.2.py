@@ -13,7 +13,7 @@ current_year = datetime.now().year
 
 age = int(input('how old are you?'))
 
-while age > 1:
+while age > 0:
     print(f'you were alive in year:{current_year}')
     current_year -= 1
     age -= 1
