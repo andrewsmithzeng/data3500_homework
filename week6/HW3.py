@@ -63,20 +63,36 @@ print(f"The overall average miles/gallon was {total_miles/total_gallons:.6f}")
 3.12 (Palindromes)
 Determine if a 5-digit integer is a palindrome (reads same backward).
 """
-# Solution: 
+# Solution 1 take it as string: 
 num_str = input("Enter a 5-digit number: ")
-if len(num_str) != 5 or not num_str.isdigit():
-    print("Invalid input")
+
+if  (num_str[0] == num_str[4] and num_str[1] == num_str[3]):
+    print(f"{num_str} is a Palindrome.") 
 else:
-    is_palindrome = (num_str[0] == num_str[4] and num_str[1] == num_str[3])
-    print("Palindrome" if is_palindrome else "Not a palindrome")
+    print(f"{num_str} is Not a palindrome.")
+
+#Solution 2 take it as integer:
+num = int(input('Enter a 5-digit number: '))
+
+first_two_digits = num // 1000
+reversed_last_two_digits = num % 10 *10 + num // 10 % 10 
+
+if first_two_digits == reversed_last_two_digits:
+    print(f"{num} is a Palindrome.") 
+else:
+    print(f"{num} is Not a palindrome.")
+
 
 
 """
 3.14 (Approximating π)
 Compute π using the series: π = 4/1 - 4/3 + 4/5 - 4/7 + ...
-Track iterations needed to first see 3.14 and 3.141 consecutively.
+You can just approximate to 3.14 and 3.141
+at what iteration of the loop you see 3.14 twice in a row,
+And 3.141
 """
+#Solution:
+
 pi_approx = 0.0
 sign = 1
 denominator = 1
