@@ -6,7 +6,8 @@ Create a list of floats from the list of strings you read in, from step 2.
 Calculate the average of the first 4 days in your list.
 Calculate the average of the last 4 days in your list.
 In a for loop, calculate a 4 day moving average for the floats in the list.
-Add logic in the for loop to implement a simple moving average trading strategy.
+Add logic in the for loop to implement a simple moving average 
+trading strategy.
 Display the profit from the strategy, after the for loop has finished.
 """
 import pandas as pd
