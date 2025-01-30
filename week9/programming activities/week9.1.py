@@ -8,3 +8,7 @@ with command "<name>'s favorite color is <color>"
 - use the with command to open the file
 - use the write function to write to the file
 """
+with open('week9\programming activities\week9.1.txt', 'w') as file:
+    name = input("Enter your name: ")
+    color = input("Enter your favorite color: ")
+    file.write(f"{name}'s favorite color is {color}.")
