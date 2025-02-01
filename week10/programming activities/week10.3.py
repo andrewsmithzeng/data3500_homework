@@ -9,3 +9,5 @@ welcome, NAME ALLCAPS!.
  - change the string to be all upper case
  - print to the console: "welcome, NAME ALLCAPS!" (adding an exclamation
 """
+name = input('what is your name?').upper()
+print(f'welcome, {name}!')

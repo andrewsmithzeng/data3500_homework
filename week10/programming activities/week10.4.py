@@ -18,3 +18,26 @@ Whoa, and then I was like Whoa"
  - append an exclamation point.
  - print the new sentence.
 """
+sentence = "dude, I just biked down that mountain and at first I was like Whoa, and then I was like Whoa."
+words = sentence.split(' ')
+words[0] = words[0].capitalize() 
+print(words)
+
+'''
+#Solution 1:
+index = [i for i, word in enumerate(words) if 'whoa' in word]
+print(index)
+words[19] = "WHOA!"
+'''
+#Solution 2:
+count = 0
+for i, word in enumerate(words):
+    if 'Whoa' in word:
+        count += 1
+        if count == 1:
+          words[i] = words[i].lower()
+        elif count == 2:
+            words[i] = 'WHOA!'
+
+sentence2 = ' '.join(words)
+print(sentence2)
