@@ -10,3 +10,5 @@ but use the string join function to turn the list into a comma separated string.
 - convert list to a comma separated string using join()
 - concatenate the two strings and print the message
 """
+colors = ', '.join(["blue", "white", "red"])
+print(f'My favorite colors are {colors}')
