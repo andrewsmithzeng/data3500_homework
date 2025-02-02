@@ -13,3 +13,18 @@ Steps:
 - append the values to the lists.
 - use a nested for loop to iterate through the list and print the values.
 """
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+table = []
+for i in range(1,num1+1):
+    row = []
+    for j in range(1,num2+1):
+        row.append(i*j)
+    table.append(row)
+
+print(table)
+for row in table:
+    for value in row:
+        print(value, end = '\t')
+    print()
