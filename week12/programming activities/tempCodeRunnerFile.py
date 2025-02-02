@@ -9,3 +9,11 @@ message in the except statement saying "Error, attempted to divide by zero"
 - in a except: block print a message indicating divide by zero error
 - end program
 """
+num1 = eval(input("gimme a number:"))
+num2 = eval(input("gimme another number:"))
+try:
+    print(f'{num1} divided by {num2} equals to {num1/num2:.2f}.')
+except:
+    print('Error, attempted to divide by zero')
+
+

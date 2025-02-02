@@ -10,3 +10,16 @@ have been updated.
 - save the Python dictionary to person.json
 - open person.json and verify the "age" value has increased by 1
 """
+import json
+
+with open('week12 unfinished\programming activities\person-2.json','r') as file:
+    dic = json.load(file)
+print(dic)
+
+dic['age'] += 1
+
+json.dump(dic,open('week12 unfinished\programming activities\person-2.json','w'))
+
+with open('week12 unfinished\programming activities\person-2.json','r') as file:
+    dic = json.load(file)
+print(dic)
