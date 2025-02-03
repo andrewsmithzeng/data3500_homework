@@ -14,8 +14,10 @@ import json
 import requests
 url = 'https://api.datamuse.com/words?rel_trg=cow'
 req = requests.get(url)
-print(req)
-dic1 = req.json()
-dic2 = req.text
-dic3 = req.cookies
-print(dic1,dic2,dic3, end = '\n\n\n')
+print(req.text)
+
+lst = req.json()
+for dct in lst:
+    if dct['word'] == 'cheese':
+        print(dct['word'],dct['score'])
+
