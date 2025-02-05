@@ -85,7 +85,7 @@ else:
 
 
 """
-3.14 (Approximating π)
+3.14 (Approximating π)***** important 在下一轮开启前赋值 previous_pi = pi_approximation
 Compute π using the series: π = 4/1 - 4/3 + 4/5 - 4/7 + ...
 You can just approximate to 3.14 and 3.141
 at what iteration of the loop you see 3.14 twice in a row,
@@ -93,40 +93,24 @@ And 3.141
 """
 #Solution:
 
-pi_approx = 0.0
-sign = 1
-denominator = 1
-term_count = 0
-hit_314 = 0       # Counter for consecutive 3.14
-hit_3141 = 0      # Counter for consecutive 3.141
-result_314 = None
-result_3141 = None
+def pi_approximation(precision, max_iterations):
+    import math
+    pi_approximation = 0
+    previous_pi = 0
+    target = round(math.pi,precision)
 
-for _ in range(3000):
-    term = 4 / denominator * sign
-    pi_approx += term
-    term_count += 1
-
-    # Check for 3.14 (two consecutive occurrences)
-    if round(pi_approx, 2) == 3.14:
-        hit_314 += 1
-        if hit_314 == 2 and not result_314:
-            result_314 = term_count
+    for i in range(max_iterations):
+        pi_approximation += 4 * (-1)**i / (2*i + 1)
+        if round(pi_approximation, precision) == target and round(previous_pi, precision) == target:
+            print(f"{round(math.pi, precision)} found at iteration {i} and {i+1}.")
+            return i
+        previous_pi = pi_approximation
+        
     else:
-        hit_314 = 0
+        print(f"{round(math.pi, precision)} not found in {max_iterations} iterations")
+        return None
 
-    # Check for 3.141 (two consecutive occurrences)
-    if round(pi_approx, 3) == 3.141:
-        hit_3141 += 1
-        if hit_3141 == 2 and not result_3141:
-            result_3141 = term_count
-    else:
-        hit_3141 = 0
+pi_approximation(2, 1000)
+pi_approximation(3,3000)
+        
 
-    denominator += 2
-    sign *= -1
-
-print(f"First consecutive 3.14 at iteration: {result_314}")   # Output: 156
-print(f"First consecutive 3.141 at iteration: {result_3141}") # Output: 1166
-
-# Note: The results for 3.14 are derived from the series approximation logic.
