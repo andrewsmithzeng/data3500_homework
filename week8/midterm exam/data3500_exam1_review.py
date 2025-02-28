@@ -58,17 +58,21 @@ def isPalindrom(s):
 print(isPalindrom("amanaplanacanalpanama"))
 print(isPalindrom("ratsliveonnoevilstar"))
 
+fav_colors = ["aggie blue", "fighting white", "red"]
 fav_colors.insert(1, "orange")
 print(fav_colors)
 
 
+a=input(1)# in console, output 1 and then wait for user input
+print(a)# print the user input
 
+num = 3.1415926
+print(f"{num:.2f}")  # 输出: 3.14
 
+def x(a=1, b=2):
+    p = print(a + b)
+    return p 
 
+a = x(3, 4)
+print(a)
 
-
-
-
-
-
-input(0)
