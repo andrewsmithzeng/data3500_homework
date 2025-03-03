@@ -25,3 +25,14 @@ with open("week9\programming activities\person-1.json", "w") as file:
     json.dump(person, file)
 
 print(person)
+
+with open(r"C:\Users\PandaB\OneDrive\USU\3500\data3500_homework\week9\programming activities\person-1.json", "r") as f:
+    for line in f:
+        print(line[10]) #打印str: {"name": "Robert Downey Jr.", "age": 60, "birthday": "April 4"} 的第10个字符，即R
+
+import json
+with open(r"C:\Users\PandaB\OneDrive\USU\3500\data3500_homework\week9\programming activities\person-1.json", "r") as f:
+    for line in f:
+        data = json.loads(line)  # 解析 JSON 数据为 Python 字典
+        print(data) #打印 dictionary: {'name': 'Robert Downey Jr.', 'age': 60, 'birthday': 'April 4'}
+        print(data["age"]) #打印 dictionary 中的 "age" 值，即60   
