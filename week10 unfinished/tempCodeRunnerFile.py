@@ -10,7 +10,7 @@ def moving_average(prices, n):
     total_profit = 0
 
     for i in range(n,len(prices)-n+1):
-        if prices[i] < np.mean(prices[i-n:i])*0.98:
+        if buy == None and prices[i] < np.mean(prices[i-n:i])*0.98:
             buy = prices[i]
             print(f'buying at {buy}')
             if first_buy is None:
@@ -20,6 +20,7 @@ def moving_average(prices, n):
             trade_profit = sell - buy
             print(f'selling at {sell}')
             print(f'trade profit: {trade_profit:.2f}')
+            buy = None
 
         total_profit += trade_profit   
 
