@@ -1,6 +1,6 @@
 import numpy as np
-with open("week10 unfinished/Nvda_1y_20250305.txt", 'r') as f:
-    prices = [float(line.strip()) for line in f]
+with open("week10/Nvda_1y_20250305.txt", 'r') as f:
+    prices = [float(line) for line in f]
 
 def moving_average(prices, n):
     first_buy = None

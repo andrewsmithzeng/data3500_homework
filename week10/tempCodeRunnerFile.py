@@ -1,6 +1,6 @@
 import numpy as np
 with open("week10 unfinished/Nvda_1y_20250305.txt", 'r') as f:
-    prices = [float(line.strip()) for line in f]
+    prices = [float(line) for line in f]
 
 def moving_average(prices, n):
     first_buy = None
@@ -10,7 +10,8 @@ def moving_average(prices, n):
     total_profit = 0
 
     for i in range(n,len(prices)-n+1):
-        if buy == None and prices[i] < np.mean(prices[i-n:i])*0.98:
+        # set condition to buy when holding no stock.
+        if buy == None and prices[i] < np.mean(prices[i-n:i])*0.98: # without numpy, use sum(prices[i-n:i])/n
             buy = prices[i]
             print(f'buying at {buy}')
             if first_buy is None:
@@ -20,7 +21,7 @@ def moving_average(prices, n):
             trade_profit = sell - buy
             print(f'selling at {sell}')
             print(f'trade profit: {trade_profit:.2f}')
-            buy = None
+            buy = None # reset buy to None
 
         total_profit += trade_profit   
 
