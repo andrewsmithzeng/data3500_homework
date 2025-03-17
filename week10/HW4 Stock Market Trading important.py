@@ -11,7 +11,7 @@ def moving_average(prices, n):
 
     for i in range(n,len(prices)-n+1):
         # set condition to buy when holding no stock.
-        if buy == None and prices[i] < np.mean(prices[i-n:i])*0.98:
+        if buy == None and prices[i] < np.mean(prices[i-n:i])*0.98: # without numpy, use sum(prices[i-n:i])/n
             buy = prices[i]
             print(f'buying at {buy}')
             if first_buy is None:
