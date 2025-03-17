@@ -9,7 +9,7 @@ lowercase and vice versa). For example, swap_case("Hello World") should return "
 # print(sentence.swapcase())
 
 #solution 2:
-def swap_case_manual():
+def swap_case():
     sentence = input('gimme a sentence:')
     result = []
     for ch in sentence:
@@ -21,4 +21,4 @@ def swap_case_manual():
             result.append(ch)
     return print("".join(result))
 
-swap_case_manual()
+swap_case()

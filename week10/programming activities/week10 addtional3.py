@@ -4,7 +4,7 @@
  For example, count_title_case("Python is an Amazing Programming Language") should return 4.
 """
 def count_title_case():
-    sentence = input('gimme a sentence:').split()
+    sentence = input('gimme a sentence:').split() #split() method splits a string into a list
     count = 0
     for word in sentence:
         if word == word.capitalize():
@@ -13,3 +13,6 @@ def count_title_case():
 
 count_title_case()
     
+
+# sentence = input('gimme a sentence:').split()
+# print(sentence)
