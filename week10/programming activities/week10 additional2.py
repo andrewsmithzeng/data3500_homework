@@ -22,3 +22,4 @@ def swap_case():
     return print("".join(result))
 
 swap_case()
+
