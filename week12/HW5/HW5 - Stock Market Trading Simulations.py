@@ -104,6 +104,7 @@ def SimpleMovingAvg(prices, n):
 def SaveResults(dictionary):
     json.dump(dictionary,open('week12/HW5/results.json','w'),indent=4)
 
+#save the results to a dictionary
 results = {}
 tickers = ['adbe','goog','googl','aapl','fis','fi','intu','pypl','hood','sofi','sqcc']
 for ticker in tickers:
