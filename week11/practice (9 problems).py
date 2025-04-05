@@ -5,13 +5,27 @@ Write a Python program that calculates the total price of items
 in a user's shopping cart. The user can enter items and quantities 
 until they are done, then calculate and print the total price.
 """
+prices_dictionary = {"apple": 0.99, "banana": 0.75, "orange": 1.25, "grapes": 1.50}
 
+def totalprice(apple, banana, orange, grapes):
+    apple = int(input("Enter the number of apples: "))
+    banana = int(input("Enter the number of bananas: "))
+    orange = int(input("Enter the number of oranges: "))
+    grapes = int(input("Enter the number of grapes: ")) 
+    total_price = 0
+    total_price += prices_dictionary["apple"] * apple
+    total_price += prices_dictionary["banana"] * banana
+    total_price += prices_dictionary["orange"] * orange
+    total_price += prices_dictionary["grapes"] * grapes
+    return total_price
 """
-2. Create a Python generator that generates prime numbers indefinitely. 
+2. Create a Python function that returns prime numbers. 
 Write a program that uses this generator to find the first 100 
 prime numbers and calculate their sum.
 """
 
+for i in range(1,100000000):
+    pass
 """
 3. Write a Python program that reads a text file containing a 
 list of numbers, computes the mean and standard deviation 
@@ -29,17 +43,16 @@ spaces and consider case-insensitive matches.
 """
 
 """
-5. Write a Python program that generates a list of random numbers 
-between 1 and 100. Use list comprehension to create a new list 
-containing only the even numbers from the generated list.
+5. Write a Python program that generates a list 100 elements long 
+of random numbers between 1 and 100. Use list comprehension to 
+create a new list containing only the even numbers from the 
+generated list.
 """
-
-"""
-Using a function rand5() that returns an integer from 1 to 5 
-(inclusive) with uniform probability, implement a function 
-rand7() that returns an integer from 1 to 7 (inclusive).
-"""
-
+import random
+lst = [random.randint(1,100) for i in range(100)]
+print(lst)
+lst_even = [i for i in lst if i % 2 == 0]
+print(lst_even)   
 """
 6. Write a Python function that takes a string as input and checks 
 if it is a palindrome (reads the same backward as forward). 
@@ -56,6 +69,11 @@ strings_to_test = [
     "Go hang a salami, I'm a lasagna hog."
 ]
 
+def is_palindrome(string):
+    string = ''.join(string.split(' ').strip('?.,')).lower()
+    return string == string[::-1]
+for string in strings_to_test:
+    print(is_palindrome(string))
 
 """
 7. Run-length encoding is a fast and simple method of encoding 
@@ -88,3 +106,5 @@ Preserve the order of even and odd numbers in the original list.
 """
 
 input_list = [1, 4, 2, 7, 5, 8, 10]
+
+# output list: [4,2,8,10,1,7,5]
