@@ -1,0 +1,13 @@
+This project is similar to Stock market trading simulations, however you will run trading simulations on 6 crypto currencies(not 10) of your choice (i.e. bitcoin, bitcoin-cash, ripple, EOS, Litecoin, Ethereum)
+Like the stock market project, you will get the price data from a web json API, and save it to csv files.  An example will be shown in class.
+Your program will run two trading strategies(not 3) on the crypto currency prices.
+Your program should be able to save new data into the files.  Meaning, when I go to run your program, it should go get the latest data, update the files, and run new analysis.
+If your program detects a buy signal or sell signal on the last day in the data, print a message like “You should <buy or sell> this stock today”.
+Store your results to your strategy in a results.json, and specifically identify which crypto currency and strategy made the most profit.Each project must meet the following 5 project requirements:
+
+Obtaining data from a web JSON API (40 points)
+Storing the data in CSV files (40 points)
+The ability to add new data to your dataset.  
+Meaning, tomorrow you can run your program again, and it will go get the latest data, and run your analysis again. (40 points)
+Perform analysis on the data. (40 points)
+Store your results in a results.json file (40 points)
