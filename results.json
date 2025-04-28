@@ -1,0 +1,12 @@
+{
+    "bitcoin": {
+        "mean_reversion": {
+            "profit": 0,
+            "returns": 0.0
+        },
+        "simple_moving_average": {
+            "profit": 0,
+            "returns": 0.0
+        }
+    }
+}
