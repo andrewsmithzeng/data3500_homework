@@ -19,8 +19,9 @@ stocks = [
 def initial_data_pull(stocks):
 
     #construct the url for the api call
+    api_key = "ACEE72F7S2Z2TN0K"
     base_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol="
-    suffix_url = "&outputsize=full&apikey=ACEE72F7S2Z2TN0K"
+    suffix_url = f"&outputsize=full&apikey={api_key}"
     for stock in stocks:
         url = base_url + stock + suffix_url
         #make the api call and convert the response to json
@@ -34,9 +35,11 @@ def initial_data_pull(stocks):
             open_prices.append(f"{stock}, {date}, {open_price}\n")
 
         #store the reserverd open_prices list in a csv file
-        with open("Final_Project_unfinished/stock_market_trading/" + stock + "_open_prices.csv", "w") as f:
+        with open("Final_Project_unfinished/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "w") as f:
             f.writelines(open_prices[::-1])
-
+            
+#call the initial_data_pull function
+initial_data_pull(stocks)
 
 
             
