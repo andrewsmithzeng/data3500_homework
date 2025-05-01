@@ -1,1 +1,3 @@
-LOZMR7VMVOVUS3MA
+
+https://www.alphavantage.co/query?
+function=TIME_SERIES_DAILY&symbol=AAPL&outputsize=full&apikey=ACEE72F7S2Z2TN0K
