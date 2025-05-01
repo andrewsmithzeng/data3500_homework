@@ -15,6 +15,7 @@ stocks = [
     "CAT",      # Caterpillar - Industrial
 ]
 
+#pull the initial data from the api and store the open prices in a csv file
 def initial_data_pull(stocks):
 
     #construct the url for the api call
