@@ -1,0 +1,106 @@
+{
+    "AAPL_mr_profit": -38205.03,
+    "AAPL_mr_returns": -194.8,
+    "AAPL_sma_profit": -3701.97,
+    "AAPL_sma_returns": -18.34,
+    "AAPL_bb_profit": 90423.68,
+    "AAPL_bb_returns": 461.06,
+    "AAPL_signals": [
+        "based on the simple moving average strategy: you should SELL AAPL stock today"
+    ],
+    "AAPL_best_strategy": "bollinger bands strategy",
+    "MSFT_mr_profit": -6811.25,
+    "MSFT_mr_returns": -18.13,
+    "MSFT_sma_profit": -4115.71,
+    "MSFT_sma_returns": -11.01,
+    "MSFT_bb_profit": 95069.61,
+    "MSFT_bb_returns": 253.05,
+    "MSFT_signals": [
+        "based on the simple moving average strategy: you should BUY MSFT stock today"
+    ],
+    "MSFT_best_strategy": "bollinger bands strategy",
+    "GOOGL_mr_profit": -64142.88,
+    "GOOGL_mr_returns": -410.78,
+    "GOOGL_sma_profit": 14215.6,
+    "GOOGL_sma_returns": 92.85,
+    "GOOGL_bb_profit": -38045.3,
+    "GOOGL_bb_returns": -255.53,
+    "GOOGL_signals": [
+        "based on the mean reversion strategy: you should BUY GOOGL stock today",
+        "based on the simple moving average strategy: you should SELL GOOGL stock today",
+        "based on the bollinger bands strategy: you should BUY GOOGL stock today"
+    ],
+    "GOOGL_best_strategy": "simple moving average strategy",
+    "JPM_mr_profit": -4925.18,
+    "JPM_mr_returns": -21.23,
+    "JPM_sma_profit": -1721.9,
+    "JPM_sma_returns": -7.29,
+    "JPM_bb_profit": 1599.86,
+    "JPM_bb_returns": 7.53,
+    "JPM_signals": [
+        "based on the simple moving average strategy: you should BUY JPM stock today"
+    ],
+    "JPM_best_strategy": "bollinger bands strategy",
+    "BAC_mr_profit": 4706.82,
+    "BAC_mr_returns": 121.75,
+    "BAC_sma_profit": -415.84,
+    "BAC_sma_returns": -10.55,
+    "BAC_bb_profit": 19022.58,
+    "BAC_bb_returns": 540.41,
+    "BAC_signals": [
+        "based on the simple moving average strategy: you should SELL BAC stock today"
+    ],
+    "BAC_best_strategy": "bollinger bands strategy",
+    "WMT_mr_profit": 4940.24,
+    "WMT_mr_returns": 53.19,
+    "WMT_sma_profit": -1905.36,
+    "WMT_sma_returns": -20.27,
+    "WMT_bb_profit": 61196.42,
+    "WMT_bb_returns": 734.43,
+    "WMT_signals": [
+        "based on the simple moving average strategy: you should BUY WMT stock today"
+    ],
+    "WMT_best_strategy": "bollinger bands strategy",
+    "COST_mr_profit": -16134.69,
+    "COST_mr_returns": -17.77,
+    "COST_sma_profit": -5430.07,
+    "COST_sma_returns": -5.46,
+    "COST_bb_profit": -63359.99,
+    "COST_bb_returns": -69.78,
+    "COST_signals": [
+        "based on the simple moving average strategy: you should SELL COST stock today"
+    ],
+    "COST_best_strategy": "simple moving average strategy",
+    "JNJ_mr_profit": 2332.31,
+    "JNJ_mr_returns": 15.39,
+    "JNJ_sma_profit": -1891.46,
+    "JNJ_sma_returns": -12.14,
+    "JNJ_bb_profit": -8382.34,
+    "JNJ_bb_returns": -58.95,
+    "JNJ_signals": [
+        "based on the simple moving average strategy: you should BUY JNJ stock today"
+    ],
+    "JNJ_best_strategy": "mean reversion strategy",
+    "UNH_mr_profit": -2067.07,
+    "UNH_mr_returns": -3.69,
+    "UNH_sma_profit": -1256.69,
+    "UNH_sma_returns": -2.94,
+    "UNH_bb_profit": -15519.56,
+    "UNH_bb_returns": -30.23,
+    "UNH_signals": [
+        "based on the simple moving average strategy: you should SELL UNH stock today"
+    ],
+    "UNH_best_strategy": "simple moving average strategy",
+    "CAT_mr_profit": -1570.9,
+    "CAT_mr_returns": -5.28,
+    "CAT_sma_profit": -886.7,
+    "CAT_sma_returns": -2.99,
+    "CAT_bb_profit": 607.17,
+    "CAT_bb_returns": 2.11,
+    "CAT_signals": [
+        "based on the simple moving average strategy: you should SELL CAT stock today"
+    ],
+    "CAT_best_strategy": "bollinger bands strategy",
+    "Most_profitable_stock": "WMT",
+    "Highest_return": 734.43
+}
