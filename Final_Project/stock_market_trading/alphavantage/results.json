@@ -1,10 +1,10 @@
 {
-    "AAPL_mr_profit": -38205.03,
-    "AAPL_mr_returns": -194.8,
-    "AAPL_sma_profit": -3701.97,
-    "AAPL_sma_returns": -18.34,
-    "AAPL_bb_profit": 90423.68,
-    "AAPL_bb_returns": 461.06,
+    "AAPL_mr_profit": -19753.54,
+    "AAPL_mr_returns": -100.72,
+    "AAPL_sma_profit": -1809.65,
+    "AAPL_sma_returns": -8.97,
+    "AAPL_bb_profit": 44610.85,
+    "AAPL_bb_returns": 227.47,
     "AAPL_signals": [
         "based on the simple moving average strategy: you should SELL AAPL stock today"
     ],
@@ -19,12 +19,12 @@
         "based on the simple moving average strategy: you should BUY MSFT stock today"
     ],
     "MSFT_best_strategy": "bollinger bands strategy",
-    "GOOGL_mr_profit": -64142.88,
-    "GOOGL_mr_returns": -410.78,
-    "GOOGL_sma_profit": 14215.6,
-    "GOOGL_sma_returns": 92.85,
-    "GOOGL_bb_profit": -38045.3,
-    "GOOGL_bb_returns": -255.53,
+    "GOOGL_mr_profit": -32196.0,
+    "GOOGL_mr_returns": -206.19,
+    "GOOGL_sma_profit": 7125.24,
+    "GOOGL_sma_returns": 46.54,
+    "GOOGL_bb_profit": -19415.0,
+    "GOOGL_bb_returns": -130.4,
     "GOOGL_signals": [
         "based on the mean reversion strategy: you should BUY GOOGL stock today",
         "based on the simple moving average strategy: you should SELL GOOGL stock today",
