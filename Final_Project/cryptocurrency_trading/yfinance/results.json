@@ -1,0 +1,70 @@
+{
+    "BTC-USD_mr_profit": -378104.47,
+    "BTC-USD_mr_returns": -4.32,
+    "BTC-USD_sma_profit": -1190791.24,
+    "BTC-USD_sma_returns": -12.57,
+    "BTC-USD_bb_profit": -4103402.61,
+    "BTC-USD_bb_returns": -46.88,
+    "BTC-USD_signals": [
+        "based on the mean reversion strategy: you should SELL BTC-USD coin today",
+        "based on the simple moving average strategy: you should BUY BTC-USD coin today",
+        "based on the bollinger bands strategy: you should SELL BTC-USD coin today"
+    ],
+    "BTC-USD_best_strategy": "mean reversion strategy",
+    "ETH-USD_mr_profit": 74431.48,
+    "ETH-USD_mr_returns": 42.36,
+    "ETH-USD_sma_profit": -61116.8,
+    "ETH-USD_sma_returns": -33.54,
+    "ETH-USD_bb_profit": 61624.65,
+    "ETH-USD_bb_returns": 39.01,
+    "ETH-USD_signals": [
+        "based on the simple moving average strategy: you should SELL ETH-USD coin today"
+    ],
+    "ETH-USD_best_strategy": "mean reversion strategy",
+    "BNB-USD_mr_profit": 10706.13,
+    "BNB-USD_mr_returns": 19.34,
+    "BNB-USD_sma_profit": -16037.06,
+    "BNB-USD_sma_returns": -26.57,
+    "BNB-USD_bb_profit": 7305.74,
+    "BNB-USD_bb_returns": 13.2,
+    "BNB-USD_signals": [
+        "based on the mean reversion strategy: you should SELL BNB-USD coin today",
+        "based on the simple moving average strategy: you should BUY BNB-USD coin today",
+        "based on the bollinger bands strategy: you should SELL BNB-USD coin today"
+    ],
+    "BNB-USD_best_strategy": "mean reversion strategy",
+    "ADA-USD_mr_profit": 11.62,
+    "ADA-USD_mr_returns": 17.07,
+    "ADA-USD_sma_profit": -33.3,
+    "ADA-USD_sma_returns": -47.3,
+    "ADA-USD_bb_profit": -20.14,
+    "ADA-USD_bb_returns": -32.28,
+    "ADA-USD_signals": [
+        "based on the mean reversion strategy: you should BUY ADA-USD coin today",
+        "based on the simple moving average strategy: you should SELL ADA-USD coin today",
+        "based on the bollinger bands strategy: you should BUY ADA-USD coin today"
+    ],
+    "ADA-USD_best_strategy": "mean reversion strategy",
+    "SOL-USD_mr_profit": -2465.83,
+    "SOL-USD_mr_returns": -18.04,
+    "SOL-USD_sma_profit": -852.08,
+    "SOL-USD_sma_returns": -5.75,
+    "SOL-USD_bb_profit": -3255.39,
+    "SOL-USD_bb_returns": -23.81,
+    "SOL-USD_signals": [
+        "based on the simple moving average strategy: you should SELL SOL-USD coin today"
+    ],
+    "SOL-USD_best_strategy": "simple moving average strategy",
+    "DOGE-USD_mr_profit": 6.7,
+    "DOGE-USD_mr_returns": 42.02,
+    "DOGE-USD_sma_profit": -5.3,
+    "DOGE-USD_sma_returns": -29.49,
+    "DOGE-USD_bb_profit": -2.28,
+    "DOGE-USD_bb_returns": -14.31,
+    "DOGE-USD_signals": [
+        "based on the simple moving average strategy: you should BUY DOGE-USD coin today"
+    ],
+    "DOGE-USD_best_strategy": "mean reversion strategy",
+    "Most_profitable_coin": "ETH-USD",
+    "Highest_return": 42.36
+}
