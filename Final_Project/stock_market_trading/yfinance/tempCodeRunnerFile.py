@@ -1,4 +1,8 @@
-import requests, json, numpy
+import yfinance as yf
+import pandas as pd
+import numpy
+import json
+
 
 #stocks to be analyzed
 stocks = [
@@ -16,26 +20,19 @@ stocks = [
 
 #function 1: pull the initial data from the api and store the open prices in a csv file
 def initial_data_pull(stocks):
-
-    #construct the url for the api call
-    api_key = "WLHJOGR00DR33F4L"
-    base_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol="
-    suffix_url = f"&outputsize=full&apikey={api_key}"
     for stock in stocks:
-        url = base_url + stock + suffix_url
-        #make the api call and convert the response to json
-        data = requests.get(url).json()
+        data = yf.download(
+            stock,
+            period = 'max',
+            interval = '1d'
+        )['Open',stock]
 
-        #create a list to store the open prices
-        open_prices = []
-        #iterate through the data and extract the open prices
-        for date in data["Time Series (Daily)"].keys():
-            open_price = data["Time Series (Daily)"][date]["1. open"] 
-            open_prices.append(f"{stock}, {date}, {open_price}\n")
-
+        open_prices = [f'{stock}, {date.strftime("%Y-%m-%d")}, {value}\n'
+                    for date, value in data.items()]
+        
         #store the reserverd open_prices list in a csv file
-        with open("Final_Project/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "w") as f:
-            f.writelines(open_prices[::-1])
+        with open("Final_Project/stock_market_trading/yfinance/" + stock + "_open_prices.csv", "w") as f:
+            f.writelines(open_prices)
 
 # #call the initial_data_pull function
 # initial_data_pull(stocks)
@@ -43,32 +40,29 @@ def initial_data_pull(stocks):
 #function 2: append the newest data to the csv file
 def append_data(stocks):
 
-    #construct the url for the api call
-    api_key = "WLHJOGR00DR33F4L"
-    base_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol="
-    suffix_url = f"&outputsize=full&apikey={api_key}"
     for stock in stocks:
-        url = base_url + stock + suffix_url
-        #make the api call and convert the response to json
-        data = requests.get(url).json()
+        data = yf.download(
+            stock,
+            period = '3mo',
+            interval = '1d'
+        )['Open',stock]
 
         #get the last day from the csv file
-        with open("Final_Project/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "r") as f:
+        with open("Final_Project/stock_market_trading/yfinance/" + stock + "_open_prices.csv", "r") as f:
             last_day_csv = f.readlines()[-1].split(",")[1].strip()
 
         #create a list to store the open prices need to be appended
         open_prices_to_append = []
 
-        #iterate through the data and extract the open prices from api
-        for date in data["Time Series (Daily)"].keys():
-            if date == last_day_csv:
+        #iterate through the data and extract the open prices to append
+        for date, value in list(data.items())[::-1]:
+            if date.strftime("%Y-%m-%d") == last_day_csv:
                 break
             else:
-                open_price = data["Time Series (Daily)"][date]["1. open"] 
-                open_prices_to_append.append(f"{stock}, {date}, {open_price}\n")
+                open_prices_to_append.append(f'{stock}, {date.strftime("%Y-%m-%d")}, {value}\n')
 
     #append the open_prices_to_append to the csv file
-        with open("Final_Project/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "a") as f:
+        with open("Final_Project/stock_market_trading/yfinance/" + stock + "_open_prices.csv", "a") as f:
             f.writelines(open_prices_to_append[::-1])
 
 #call the append_data function
@@ -219,7 +213,7 @@ def check_last_day_signal(prices,n):
 
 #function 7: save the results to a json file
 def SaveResults(dictionary):
-    json.dump(dictionary,open('Final_Project/stock_market_trading/alphavantage/results.json','w'),indent=4)
+    json.dump(dictionary,open('Final_Project/stock_market_trading/yfinance/results.json','w'),indent=4)
 
 
 #save the results to a dictionary
@@ -275,4 +269,3 @@ print(results)
 
 # save the results to a json file
 SaveResults(results)
-

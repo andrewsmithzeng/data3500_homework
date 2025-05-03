@@ -34,7 +34,7 @@ def initial_data_pull(stocks):
             open_prices.append(f"{stock}, {date}, {open_price}\n")
 
         #store the reserverd open_prices list in a csv file
-        with open("Final_Project_unfinished/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "w") as f:
+        with open("Final_Project/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "w") as f:
             f.writelines(open_prices[::-1])
 
 # #call the initial_data_pull function
@@ -53,7 +53,7 @@ def append_data(stocks):
         data = requests.get(url).json()
 
         #get the last day from the csv file
-        with open("Final_Project_unfinished/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "r") as f:
+        with open("Final_Project/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "r") as f:
             last_day_csv = f.readlines()[-1].split(",")[1].strip()
 
         #create a list to store the open prices need to be appended
@@ -68,11 +68,11 @@ def append_data(stocks):
                 open_prices_to_append.append(f"{stock}, {date}, {open_price}\n")
 
     #append the open_prices_to_append to the csv file
-        with open("Final_Project_unfinished/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "a") as f:
+        with open("Final_Project/stock_market_trading/alphavantage/" + stock + "_open_prices.csv", "a") as f:
             f.writelines(open_prices_to_append[::-1])
 
-# #call the append_data function
-# append_data(stocks)
+#call the append_data function
+append_data(stocks)
 
 #function 3: mean reversion strategy 
 def MeanReversionStrategy(prices,n):
