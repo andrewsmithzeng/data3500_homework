@@ -1,0 +1,68 @@
+{
+    "dogecoin_mr_profit": 0.73,
+    "dogecoin_mr_returns": 4.58,
+    "dogecoin_sma_profit": 0.27,
+    "dogecoin_sma_returns": 1.48,
+    "dogecoin_bb_profit": -4.34,
+    "dogecoin_bb_returns": -27.3,
+    "dogecoin_signals": [
+        "based on the mean reversion strategy: you should BUY dogecoin coin tomorrow",
+        "based on the simple moving average strategy: you should SELL dogecoin coin tomorrow",
+        "based on the bollinger bands strategy: you should BUY dogecoin coin tomorrow"
+    ],
+    "dogecoin_best_strategy": "mean reversion strategy",
+    "bitcoin_mr_profit": 76634.52,
+    "bitcoin_mr_returns": 0.88,
+    "bitcoin_sma_profit": -288052.91,
+    "bitcoin_sma_returns": -3.04,
+    "bitcoin_bb_profit": 240535.18,
+    "bitcoin_bb_returns": 2.75,
+    "bitcoin_signals": [
+        "based on the simple moving average strategy: you should SELL bitcoin coin tomorrow"
+    ],
+    "bitcoin_best_strategy": "bollinger bands strategy",
+    "ethereum_mr_profit": 9202.11,
+    "ethereum_mr_returns": 5.83,
+    "ethereum_sma_profit": -21779.9,
+    "ethereum_sma_returns": -11.96,
+    "ethereum_bb_profit": 59652.38,
+    "ethereum_bb_returns": 37.82,
+    "ethereum_signals": [
+        "based on the simple moving average strategy: you should BUY ethereum coin tomorrow"
+    ],
+    "ethereum_best_strategy": "bollinger bands strategy",
+    "binancecoin_mr_profit": 3001.09,
+    "binancecoin_mr_returns": 5.42,
+    "binancecoin_sma_profit": -2477.66,
+    "binancecoin_sma_returns": -4.09,
+    "binancecoin_bb_profit": 5249.1,
+    "binancecoin_bb_returns": 9.49,
+    "binancecoin_signals": [
+        "based on the simple moving average strategy: you should BUY binancecoin coin tomorrow"
+    ],
+    "binancecoin_best_strategy": "bollinger bands strategy",
+    "cardano_mr_profit": 3.81,
+    "cardano_mr_returns": 5.59,
+    "cardano_sma_profit": -6.12,
+    "cardano_sma_returns": -8.67,
+    "cardano_bb_profit": -6.51,
+    "cardano_bb_returns": -10.46,
+    "cardano_signals": [
+        "based on the mean reversion strategy: you should SELL cardano coin tomorrow",
+        "based on the simple moving average strategy: you should BUY cardano coin tomorrow"
+    ],
+    "cardano_best_strategy": "mean reversion strategy",
+    "solana_mr_profit": 1417.64,
+    "solana_mr_returns": 10.4,
+    "solana_sma_profit": -904.72,
+    "solana_sma_returns": -6.1,
+    "solana_bb_profit": -900.28,
+    "solana_bb_returns": -6.6,
+    "solana_signals": [
+        "based on the mean reversion strategy: you should BUY solana coin tomorrow",
+        "based on the simple moving average strategy: you should SELL solana coin tomorrow"
+    ],
+    "solana_best_strategy": "mean reversion strategy",
+    "Most_profitable_coin": "ethereum",
+    "Highest_return": 37.82
+}
